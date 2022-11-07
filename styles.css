@@ -1,0 +1,855 @@
+:root {
+    --font-titulo:'Indie Flower', cursive; 
+    --font-weight: 400;
+    --font-titulo-mobile-size: 7.5rem;
+    --font-descripcion: 'Work Sans', sans-serif;
+    --black:#0C1919;
+    --turquesa:#4E7777;
+    --amarillo:#E1A142;
+    --turquesa-opaco:#88AAAA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100%;
+   
+} 
+header {
+    height: 10%;
+    width: 100%;
+    background: var(--black);
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navMobile {
+    height:100%;
+    width:25%;
+    background: var(--black);
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    margin-bottom:4%;
+
+}
+
+.logo {
+    height: 95%;
+    width: 45%;
+    padding-left: 15%
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+}
+
+.navMenu{
+    display:flex;
+    position:fixed;
+    top:10%;
+    bottom:0;
+    background:var(--black);
+    width:100%;
+    left:0;
+    justify-content:space-evenly;
+    flex-direction:column;
+    align-items:center;
+    clip-path:circle(0 at center);
+    transition: clip-path 1s ease-in-out;
+}
+
+.navInput:checked + .navMenu{
+    clip-path:circle(100% at center);
+}
+
+.navLink {
+    color:white;
+    font-family:var(--font-descripcion);
+    font-size:3.0rem;
+    text-decoration:none;
+}
+.navInput{
+    display:none;
+}
+.burguer {
+    font-size:4.0rem;
+    position:absolute;
+    color:white;
+    cursor: pointer;
+}
+
+
+
+main {
+    height: 140rem;
+    width:100%;
+    background-image: url("../Imagenes/inicio/portada.jpg");
+    background-size: cover; 
+    background-position: center;
+    padding-left: 5%;
+    padding-right:5%;
+
+}
+
+.titulo {
+    color: white;
+    padding-top: 30%;
+    font-family: var(--font-titulo);
+    font-weight: var(--font-weight);
+    font-size: var(--font-titulo-mobile-size);
+}
+
+.descripcion {
+    height:60%;
+    width:90%;
+    color: white;
+    padding-top:10%;
+    font-family: var(--font-descripcion);
+    font-size: 3.90rem;
+    
+
+}
+
+
+
+.lugar{
+    height: auto;
+    width:100%;
+    background:white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:10%;
+    margin-bottom: 10%;
+    
+    
+}
+
+.actividades {
+    height: 90rem;
+    width: 85%;
+    background: white;
+    box-shadow: rgba(78, 119, 119, 0.28) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    margin-top:5%;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    border-radius: 20px;
+    padding: 4%;
+
+}
+
+.actividades img {
+    height:50%;
+    width:100%;
+    border-radius: 20px;
+    box-shadow: rgba(78, 119, 119, 0.28) 0px 14px 14px;
+      
+   
+}
+.actividades h2 {
+    margin-top:5%;
+    font-family: var(--font-titulo);
+    font-weight: var(--font-weight);
+    font-size: 5.5rem;
+    color: var(--turquesa);
+}
+
+.actividades p {
+    margin-top:5%;
+    font-family: var(--font-descripcion);
+    font-size: 2.40rem;
+}
+
+.botonPrimario {
+    background: var(--turquesa);
+    height:10%;
+    margin-right:30%;
+    margin-left:30%;
+    border-radius: 16px;
+    font-family:var(--font-descripcion);
+    color:white;
+    font-size:2.4rem;
+    margin-top:8%;
+    margin-bottom:5%;
+    cursor:pointer;
+    box-shadow: rgba(78, 119, 119, 0.28) 0px 10px 10px; 
+
+}
+#ultimaActividad {
+    margin-bottom:5%;
+}
+
+.imperdible {
+    height: auto;
+    width:100%;
+    background:white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:10%;
+    margin-bottom: 10%;
+
+}
+
+.imperdible h3 {
+    color: var(--amarillo);
+    margin-top: 5%;
+    font-family: var(--font-titulo);
+    font-weight: var(--font-weight);
+    font-size: 6.80rem ;
+}
+
+.imperdible p {
+    height:60%;
+    width:90%;
+    color: var(--black);
+    padding-top:5%;
+    font-family: var(--font-descripcion);
+    font-size: 3.20rem;
+    text-align: center;
+}
+
+.ola {
+    height: 70rem;
+    width:100%;
+    background-image: url("../Imagenes/inicio/fondo-ola.jpg");
+    background-size: cover; 
+    background-position: center;
+    padding:10%;
+    padding-top:15%;
+    margin-top:10%;
+}
+
+.ola p {
+    width:100%;
+    text-align:center;
+    color:white;
+    font-family:var(--font-titulo);
+    font-size:4.0rem
+}
+
+
+.destacadosTitulo {
+    color: var(--amarillo);
+    margin-bottom:5%;
+    font-family: var(--font-titulo);
+    font-weight: var(--font-weight);
+    font-size: 6.80rem ;
+   
+}
+
+.lugarPLayas {
+    height: auto;
+    width:100%;
+    background:white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:10%;
+    margin-bottom: 10%;
+}
+.playas {
+    height: 90rem;
+    width: 85%;
+    background: white;
+    box-shadow: rgba(78, 119, 119, 0.28) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    margin-top:5%;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    border-radius: 20px;
+    padding: 4%;
+}
+
+.playas img {
+    border-radius:20px;
+    width:100%;
+    height:50%;
+}
+
+.playas h3 {
+    margin-top:0%;
+    font-family: var(--font-titulo);
+    font-weight: var(--font-weight);
+    font-size: 4.5rem;
+    color: var(--turquesa);
+}
+
+.playas p {
+    margin-top:5%;
+    font-family: var(--font-descripcion);
+    font-size: 2.40rem;
+}
+
+.playas ul {
+    font-family: var(--font-descripcion);
+    font-size: 2.40rem;
+    padding-left: 5%;
+}
+
+.seccionTestimonios {
+    height: auto;
+    width:100%;
+    background:white;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin-top:10%;
+    margin-bottom: 10%;
+}
+.testimonioContenedor {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+}
+.seccionTestimonios h4{
+    color: var(--amarillo);
+    margin-bottom:5%;
+    font-family: var(--font-titulo);
+    font-weight: var(--font-weight);
+    font-size: 6.80rem ;
+}
+.testimonio{
+    height:50%;
+    width:80%;
+    margin-top:5%;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    background: var(--turquesa-opaco);
+    border-radius: 20px;
+    padding:5%;
+    box-shadow: rgba(78, 119, 119, 0.28) 0px 4px 16px, rgba(78, 119, 119, 0.28) 0px 8px 24px, rgba(78, 119, 119, 0.28) 0px 16px 56px;
+}
+
+.testimonio img {
+    height:220px;
+    width:220px;
+    border-radius: 120px;
+    border-color: white;
+    border-style: solid;
+    border-width: thick;
+}
+
+.testimonioDetalles {
+    padding-left: 5%;
+    padding-right:5%;
+    
+}
+
+.testimonioDescripcion {
+    font-family: var(--font-descripcion);
+    font-style: italic;
+    font-size:2.8rem;
+    color: var(--black);
+    margin-bottom:5%;
+}
+
+.testimonioPersona {
+    font-family: var(--font-descripcion);
+    font-size:2.2rem;
+    color: white; //En el figma habia otro color pero no contrastaba bien.
+}
+
+footer {
+    display:flex;
+    flex-direction:column;
+    height:12%;
+    width:100%;
+    background:var(--turquesa);
+    padding-bottom:2%;
+}
+
+.contacto{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    width:100%;
+    height:50%;
+    margin-top:5%;
+}
+
+.contacto img {
+    margin-right:0%;
+    height:80px;
+    width:80px;
+    cursor:pointer;
+}
+
+.copyright{
+    color:white;
+    font-size: 2.2rem;
+    font-family:var(--font-descripcion);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:5%;
+    
+}
+
+@media (max-width: 999px){
+    .lugarPlayasDesk{
+    display:none;
+    }
+
+    .navDesktop{
+        display:none;
+    }
+}
+
+@media (min-width:1000px){
+    .navMobile{
+        display:none;
+    }
+
+    .logo {
+        height: 80%;
+        width: 21%;
+    }
+    header {
+        height: 10%;
+        width: 100%;
+        background: var(--black);
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .navDesktop {
+        width:60%;
+    }
+    .navMenuDesk {
+        font-family:var(--font-descripcion);
+        font-size:1.0rem;
+        display:flex;
+        justify-content:;space-between;
+        align-items:center;
+        margin-right:0%;
+    }
+    .menuItem {
+        color:white;
+        text-decoration:none;
+        padding:2%;
+        border-radius:10px;
+    }
+
+    .menuItem:hover {
+        background: var(--turquesa-opaco)
+    }
+
+    .titulo {
+        color: white;
+        padding-top:1%;
+        font-family: var(--font-titulo);
+        font-weight: var(--font-weight);
+        font-size: 2.7rem;
+    }
+
+    main {
+        height: 400px;
+        width:full;
+        background-image: url("../Imagenes/inicio/portada.jpg");
+        background-size:100% 400px;
+        background-repeat: no-repeat;
+        padding-left: 15%;
+        padding-right:15%;
+    }
+
+    .descripcion {
+        height:60%;
+        width:50%;
+        color: white;
+        padding-top:0%;
+        font-family: var(--font-descripcion);
+        font-size: 1.20rem;
+    }
+
+    .lugar{
+        height:40%;
+        width:80%;
+        background:white;
+        display:flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content:space-evenly;
+        position:absolute;
+        left:10%;
+        right:0%;
+        top:30%;
+        border-radius:20px;       
+    }
+
+     .actividades {
+        height: 40rem;
+        width: 32%;
+        background: white;
+        box-shadow: rgba(78, 119, 119, 0.28) 0px 0px 0px 0px, rgba(14, 30, 37, 0.32) 0px 0px 0px 0px;
+        margin-top:0%;
+        display:flex;
+        flex-direction:column;
+        justify-content:flex-start;
+        align-items:flex-start;
+        padding:1%;
+        padding-top:2%;
+        margin:0%;
+        margin-bottom:0%;     
+        border-radius: 20px;
+    }
+
+    .actividades img {
+        height:260px;
+        width:100%;
+        border-radius: 15px;
+        box-shadow: rgba(78, 119, 119, 0.28) 0px 14px 14px; 
+    }
+    .actividades h2 {
+        margin-top:5%;
+        font-family: var(--font-titulo);
+        font-weight: var(--font-weight);
+        font-size: 1.7rem;
+        color: var(--turquesa);
+    }
+    
+    .actividades p {
+        margin-top:5%;
+        font-family: var(--font-descripcion);
+        font-size: 1.10rem;
+        height:30%;
+    } 
+
+    #ultimaActividad {
+       margin-bottom:0%;
+        }
+
+    #ultimaActividad img {
+        margin-bottom:0%;
+        margin-top:%;
+
+    }
+
+    #ultimaActividad p {
+        margin-bottom:2%;
+    }
+
+
+    .botonPrimario {
+        background: var(--turquesa);
+        height:60px;
+        width:120px;
+        margin-right:0%;
+        margin-left:0%;
+        border-radius: 14px;
+        font-family:var(--font-descripcion);
+        color:white;
+        font-size:1.2rem;
+        margin-top:4%;
+        margin-bottom:0%;
+        cursor:pointer;
+    
+        
+    }
+    
+    .imperdible {
+
+        height: auto;
+        width:100%;
+        background:white;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top:40%;
+        margin-bottom: 5%;
+    
+    }
+    
+    .imperdible h3 {
+        color: var(--amarillo);
+        margin-top: 4%;
+        font-family: var(--font-titulo);
+        font-weight: var(--font-weight);
+        font-size: 3.80rem ;
+    }
+    
+    .imperdible p {
+        height:60%;
+        width:65%;
+        color: var(--black);
+        padding-top:2%;
+        font-family: var(--font-descripcion);
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .ola {
+        height:400px;
+        width:100%;
+        background-image: url("../Imagenes/inicio/fondo-ola.jpg");
+        background-size: 2040px 400px;
+        background-repeat: no-repeat;
+        padding-left:20%;
+        padding-right:20%;
+        padding-top:5%;
+        margin-top:5%;
+
+    }
+    
+    .ola p {
+        width:100%;
+        padding-left:10%;
+        padding-right:10%;
+        text-align:left;
+        color:white;
+        font-family:var(--font-titulo);
+        font-size:2.0rem
+    }
+
+    .destacadosTitulo {
+        color: var(--amarillo);
+        margin-top: 0%;
+        font-family: var(--font-titulo);
+        font-weight: var(--font-weight);
+        font-size: 3.80rem ;
+        text-align:left;
+    }
+    
+    .lugarPLayas {
+       display:none;
+    }
+    .playas {
+       display:none;
+        }
+    
+    .playas h3 {
+        display:none;
+    }
+    
+    .playas ul {
+        display:none;
+    }
+
+    .lugarPlayasDesk {
+        width:80%;
+        margin-left:10%;
+        margin-right:10%;
+    }
+
+    .playasDesk {
+        width:100%;
+        height:50%;
+        display:flex;
+        justify-content: space-between;
+        padding:0%;
+        margin-bottom:4%;
+    }
+
+    .playaDetalles {
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        width:50%;
+    }
+
+    .playaDetalles h3 {
+        font-family: var(--font-titulo);
+        color: var(--turquesa);
+        font-size: 1.9rem;
+    }
+
+    .playaDetalles p {
+        font-family: var(--font-descripcion);
+        width:100%;
+    }
+
+    #imgSancho {
+        border-radius:20px;
+        box-shadow: rgba(78, 119, 119, 0.28) 0px 14px 14px;
+        margin-right:2%;
+        width:70%;
+
+    }
+
+    .playaInferior {
+        display:flex;
+        width:100%;
+        height:50%;
+        justify-content:space-between;
+    
+    }
+
+    .playasDeskInf {
+        width:50%;
+        display:flex;
+        margin-right:0%;
+    }
+
+
+    .playasDeskInf img {
+        border-radius:20px;
+        box-shadow: rgba(78, 119, 119, 0.28) 0px 14px 14px;
+        margin-right:5%;
+        width:240px;
+        
+    }
+    
+    .playasDeskInf ul {
+        margin-top:4%;
+        margin-left:10%;
+        font-family: var(--font-descripcion);
+
+    }
+
+    .playaDetallesInf {
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        width:60%;
+    }
+
+    .playaDetallesInf h3 {
+        font-family: var(--font-titulo);
+        color: var(--turquesa);
+        font-size: 1.9rem;
+    }
+
+    .playaDetallesInf p {
+        font-family: var(--font-descripcion);
+        width:100%;
+    }
+
+    .lugarPlayasDesk .botonPrimario {
+       height:40px;   
+    }
+
+    #baia {
+        margin-right:3%;
+    }
+
+    .seccionTestimonios {
+        height: auto;
+        width:80%;
+        background:white;
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top:5%;
+        margin-bottom: 10%;
+        margin-left:10%;
+        margin-right:10%;
+    }
+
+    .seccionTestimonios h4 {
+        color: var(--amarillo);
+        margin-top: 0%;
+        font-family: var(--font-titulo);
+        font-weight: var(--font-weight);
+        font-size: 3.80rem ;
+        text-align:left;
+        width:100%;
+        padding-left:0%;
+        padding-right:5%;
+    }
+
+    .testimonioContenedor {
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        width:99%;
+
+    }
+    .testimonio{
+        height:170px;
+        width:49%;
+        margin-top:0%;
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        background: var(--turquesa-opaco);
+        border-radius: 20px;
+        padding:2%;
+        box-shadow: rgba(78, 119, 119, 0.28) 0px 4px 16px, rgba(78, 119, 119, 0.28) 0px 8px 24px, rgba(78, 119, 119, 0.28) 0px 16px 56px;
+    }
+    
+    .testimonio img {
+        height:110px;
+        width:110px;
+        border-radius: 120px;
+        border-color: white;
+        border-style: solid;
+        border-width: thick;
+    }
+    
+    .testimonioDetalles {
+        padding-left: 5%;
+        padding-right:5%;
+        
+    }
+    
+    .testimonioDescripcion {
+        font-family: var(--font-descripcion);
+        font-style: italic;
+        font-size:1.0rem;
+        color: var(--black);
+        margin-bottom:5%;
+    }
+    
+    .testimonioPersona {
+        font-family: var(--font-descripcion);
+        font-size:1.0rem;
+        color: white; 
+    }
+
+    footer {
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        justify-content: space-between;
+        height:15%;
+        width:100%;
+        padding-left:10%;
+        padding-right:10%;
+        background:var(--turquesa);
+        padding-bottom:0%;
+    }
+    
+    .contacto{
+        display:flex;
+        flex-direction:row;
+        justify-content:flex-start;
+        width:50%;
+        height:50%;
+        margin-top:2%;
+        margin-left:2%;
+    }
+    
+    .contacto img {
+        padding-right:8%;
+        height:35px;
+        width:35px;
+        cursor:pointer;
+    }
+    
+    .copyright{
+        color:white;
+        font-size: 1.0rem;
+        font-family:var(--font-descripcion);
+        display:flex;
+        align-items: center;
+        justify-content: flex-end;
+        width:50%;
+        margin-top:0%;
+        
+    }
+
+}    

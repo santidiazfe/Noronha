@@ -1,0 +1,199 @@
+<!---Intente utilizar un ancho wrapper de 1024px pero al momento de aplicarlo me dio errores y no se veia correctamente. -->
+
+<!DOCTYPE html>
+    <html lang="es">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="vieport" content="width=device-width, initial-scale=1.0">
+            <title>Fernando de Noronha</title>
+            <meta name="descripcion" content="Fernando de Noronha es un paraiso natural en el nordeste de Brasil"/>
+            <link rel="stylesheet" href="styles.css">
+            <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+            <script src="https://kit.fontawesome.com/5de4e9b796.js" crossorigin="anonymous"></script>
+        </head>
+
+        <body>
+
+            <header>
+
+                <img class="logo" src="/Imagenes/logo.png">
+
+                <!--navMobile-->
+                <nav class="navMobile">
+                    <label href="" for="menu" class="navLabel">
+                        <i id class="fa-solid fa-bars burguer"></i>
+                    </label>
+                    <input type="checkbox" id="menu" class="navInput">
+                    <div class="navMenu">
+                        <a href="" class="navLink">Inicio </a>
+                        <a href="" class="navLink">Lugares destacados </a>
+                        <a href="" class="navLink">Fotos</a>
+                        <a href="" class="navLink">Videos</a>
+                        <a href="" class="navLink">Como llegar</a>
+                    </div> 
+                </nav>
+
+                <!-- navDesktop -->
+                <nav class="navDesktop">
+                    <div class="navMenuDesk">
+                        <a href="" class="menuItem">Inicio </a>
+                        <a href="#lugarDestacado" class="menuItem">Lugares destacados </a>
+                        <a href="" class="menuItem">Fotos</a>
+                        <a href="" class="menuItem">Videos</a>
+                        <a href="" class="menuItem">Como llegar</a>
+                    </div> 
+                </nav>
+
+            </header>
+
+            <main>
+                <h1 class="titulo">Fernando de Noronha</h1>
+                <p class="descripcion">Es un archipiélago volcánico brasileño, perteneciente al estado de Pernambuco. Se encuentra en el océano Atlántico, a 710 km de Fortaleza (capital de Ceará), 360 km de Natal (capital de Río Grande del Norte), y a 545 km de Recife (capital de Pernambuco).</p>
+            </main>
+
+            <section class="lugar">
+
+                <article class="actividades">
+                    <img src="Imagenes/inicio/actividades/tamar.jpg" alt="">
+                    <h2>Reserva natural</h2>
+                    <p>Fundado a principios de la década de 1980, el Proyecto TAMAR surgió con el objetivo de proteger especies de tortugas gigantes amenazadas de extinción en la costa.</p>
+                    <button class="botonPrimario">Ampliar</button>
+                </article>
+
+                <article class="actividades">
+                    <img src="Imagenes/inicio/actividades/buceo.jpg" alt="">
+                    <h2>Buceo</h2>
+                    <p>Debido a la Corriente Ecuatorial del Sur, que empuja el agua cálida de África a las islas, el buceo a profundidades de 30 a 40 metros no requiere un traje de neopreno.</p>
+                    <button class="botonPrimario">Ampliar</button>
+                </article>
+
+                <article class="actividades" id="ultimaActividad">
+                    <img src="Imagenes/inicio/actividades/surf.jpg"  alt="">
+                    <h2>Surf</h2>
+                    <p>Fernando de Noronha es, sin duda, uno de los mejores lugares de Brasil para la práctica del surf, y sus olas tubulares y cristalinas atraen a los surfistas.</p>
+                    <button class="botonPrimario">Ampliar</button>
+                </article>
+
+            </section>
+
+            <section class="imperdible">
+                <h3>Un lugar imperdible</h3>
+                <p> Es considerado uno de los mejores puntos de buceo de Brasil, por lo que muchos ecoturistas viajan al archipiélago exclusivamente para bucear. Los turistas que van a "Noroña" (como es comúnmente llamado) no buscan centros nocturnos ni grandes hoteles, sino que están dispuestos a tener un poco de incomodidades con tal de disfrutar de la naturaleza única del archipiélago. </p>
+                <div class="ola">
+                    <p>“Viaje a Fernando de Noronha en tres ocasiones hace unos años. Toda la isla es un paraíso , un lugar mágico y en concreto Baia do Sancho es espectacular ; para mi sin dudarlo es una de las mejores playas del mundo”</p>
+                </div>
+            </section>
+            <!--PlayaMob-->
+            <div  class="lugarPLayas" >
+
+                <h3 class="destacadosTitulo">Lugares destacados</h3>
+            
+                <div class="playas"">
+                    <img id="imgSancho" src="Imagenes/inicio/playas/baia-do-sancho.jpg" alt=""> 
+                    <h3>Baia do Sancho</h3>
+                    <p>Aislada, de arena fina y dorada, bañada por un agua verde esmeralda y rodeada de vegetación y fauna intocables, así es Baia do Sancho, la playa brasileña que suele figurar en todas las listas de las playas más bonitas del mundo; la última, la de TripAdvisor 2020. Pero... ¿qué tiene este arenal para que los usuarios la elijan como la mejor del mundo?</p>
+                    <button class="botonPrimario">Ampliar</button>
+                </div>
+
+                <div class="playas">
+                    <img src="Imagenes/inicio/playas/baia-dos-porcos.jpg" alt="">
+                    <h3>Baia dos Porcos</h3>
+                    <p>La Baia dos Porcos es uno de los mejores lugares para practicar el snorkel en el Parque durante el período sin olas.</p>
+                    <ul>
+                        <li>Agua cristalina</li>
+                        <li>Poca profundidad</li>
+                        <li>Fauna marina abundante</li>
+                    </ul> 
+                    <button class="botonPrimario">Ampliar</button>
+                </div>
+
+                <div class="playas" >
+                    <img src="Imagenes/inicio/playas/cacimba-do-padre.jpg" alt="">
+                    <h3>Cacimba do Padre</h3>
+                    <p>Realmente es una playa grande, tranquila y con un mar ideal para hacer surf. Cuenta con un parador en donde se puede almorzar.</p>
+                    <ul>
+                        <li>Los mejores picos de surf</li>
+                        <li>Muy espaciosa</li>
+                        <li>Parador para almorzar y bar</li>
+                    </ul> 
+                    <button class="botonPrimario">Ampliar</button>
+                </div>
+            </div>
+            <!--PlayaDesktop-->
+            <div class="lugarPlayasDesk" id="lugarDestacado" name="lugarDestacado">
+                <h3 class="destacadosTitulo">Lugares destacados</h3>
+
+                <div class="playasDesk">
+                    <img id="imgSancho" src="Imagenes/inicio/playas/baia-do-sancho.jpg" alt=""> 
+                    <div class="playaDetalles">
+                        <h3>Baia do Sancho</h3>
+                        <p>Aislada, de arena fina y dorada, bañada por un agua verde esmeralda y rodeada de vegetación y fauna intocables, así es Baia do Sancho, la playa brasileña que suele figurar en todas las listas de las playas más bonitas del mundo; la última, la de TripAdvisor 2020. Pero... ¿qué tiene este arenal para que los usuarios la elijan como la mejor del mundo?</p>
+                        <button class="botonPrimario">Ampliar</button>
+                    </div>
+                </div>
+                <div class="playaInferior">
+
+                    <div class="playasDeskInf" id="baia">
+                        <img src="Imagenes/inicio/playas/baia-dos-porcos.jpg" alt="">
+                        <div class="playaDetallesInf">
+                            <h3>Baia dos Porcos</h3>
+                            <p>La Baia dos Porcos es uno de los mejores lugares para practicar el snorkel en el Parque durante el período sin olas.</p>
+                            <ul>
+                                <li>Agua cristalina</li>
+                                <li>Poca profundidad</li>
+                                <li>Fauna marina abundante</li>
+                            </ul> 
+                            <button class="botonPrimario">Ampliar</button>
+                        </div>
+                    </div>
+
+                    <div class="playasDeskInf">
+                        <img src="Imagenes/inicio/playas/cacimba-do-padre.jpg" alt="">
+                        <div class="playaDetallesInf">
+                            <h3>Cacimba do Padre</h3>
+                            <p>Realmente es una playa grande, tranquila y con un mar ideal para hacer surf. Cuenta con un parador en donde se puede almorzar.</p>
+                            <ul>
+                                <li>Los mejores picos de surf</li>
+                                <li>Muy espaciosa</li>
+                                <li>Parador para almorzar y bar</li>
+                            </ul> 
+                            <button class="botonPrimario">Ampliar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="seccionTestimonios">
+                <h4 class=" ">Testimonios</h4>
+                <div class="testimonioContenedor">
+                    <div class="testimonio">
+                        <img src="Imagenes/testimonios/graciela.jpg" alt="">
+                        <div class="testimonioDetalles">
+                            <p class="testimonioDescripcion">“Este lugar es muy buena opción, recomendable para olvidar lo cotidiano, tranquilidad, naturaleza, belleza inexplicable.”</p>
+                            <p class="testimonioPersona">Graciela, 24 años</p>
+                        </div>
+                    </div>
+                    <div class="testimonio">
+                        <img src="Imagenes/testimonios/pablo.jpg" alt="">
+                        <div class="testimonioDetalles"> 
+                            <p class="testimonioDescripcion">“Un must!!!! bajar por la escalera hacia la playa, suma adrenalina. muy muy lindo. Tener en cuenta q hay horarios para subir, bajar y para la presencia de tiburones”</p>
+                            <p class="testimonioPersona">Pablo, 32 años</p>
+                        </div>
+                    </div>
+                </div>       
+            </div>
+
+            <footer>
+                <div class="contacto">
+                    <a href="https://www.facebook.com/ConciergeNoronha/" target="_blank"><img src="Imagenes/social/facebook.svg" alt=""></a>
+                    <a href="https://www.instagram.com/noronha_oficial/" target="_blank"><img src="Imagenes/social/instagram.svg" alt=""></a>
+                    <a href="https://twitter.com/noronhape" target="_blank"><img src="Imagenes/social/twitter.svg" alt=""></a>    
+                </div>
+                <div class="copyright">
+                    <p>Todos los derechos reservados © Noronha</p>
+                </div>
+            </footer> 
+        </body>
+    </html>
